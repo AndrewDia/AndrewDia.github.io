@@ -6,8 +6,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lora:wght@700&family=Merriweather:wght@400;700&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap"
           rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <title>Шепетівської ЗОШ №1</title>
+    <link rel="stylesheet" href="css/index.css">
+    <title>Шепетівська ЗОШ №1</title>
 </head>
 <body>
 <header id="header" class="header">
@@ -24,7 +24,7 @@
             <div>
                 <ul class="menu">
                     <li><a href="#">Про школу</a></li>
-                    <li><a href="#">Новини</a></li>
+                    <li><a href="news.html">Новини</a></li>
                     <li><a href="#">Учням</a></li>
                     <li><a href="#">Вчителям</a></li>
                     <li><a href="#">Календар</a></li>
@@ -140,7 +140,7 @@
                 </div>
             </div>
             <hr class="last-hr">
-            <button>Дізнатися більше</button>
+            <button onclick="document.location='news.html'">Дізнатися більше</button>
         </div>
     </div>
 </section>
@@ -172,34 +172,40 @@
                     <p>вул. Островського, 3,<br>
                         Шепетівка, 30405</p>
                     <p>&nbsp;</p>
-                    <div class="text-link">
-                        <img src="img/placeholder.png" alt="placeholder">
-                        <p class="SemiBold">Переглянути на карті</p>
-                    </div>
+                    <a href="https://www.google.com.ua/maps/place/School+%E2%84%961/@50.1794332,27.0625584,16.46z/data=!4m5!3m4!1s0x0:0x755f1042ba927323!8m2!3d50.1796078!4d27.0648301?hl=ru">
+                        <div class="text-link">
+                            <img src="img/placeholder.png" alt="placeholder">
+                            <p class="SemiBold">Переглянути на карті</p>
+                        </div>
+                    </a>
                     <p>&nbsp;</p>
-                    <div class="text-link">
-                        <div class="social-net">
-                            <img src="img/youtube.svg" alt="YouTube">
-                            <p class="SemiBold">&nbsp;Шкільне телебачення</p>
+                    <a href="https://www.youtube.com/channel/UC6a7g6ig21RyapwrBzaCNWg/featured">
+                        <div class="text-link">
+                            <div class="social-net">
+                                <img src="img/youtube.svg" alt="YouTube">
+                                <p class="SemiBold">&nbsp;Шкільне телебачення</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="text-link">
-                        <div class="social-net">
-                            <img src="img/facebook.svg" alt="Facebook">
-                            <p class="SemiBold">&nbsp;Шкільні новини</p>
+                    </a>
+                    <a href="https://www.facebook.com/profile.php?id=100014899299904">
+                        <div class="text-link">
+                            <div class="social-net">
+                                <img src="img/facebook.svg" alt="Facebook">
+                                <p class="SemiBold">&nbsp;Шкільні новини</p>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
                 <div>
                     <p class="SemiBold">Посилання</p>
                     <ul class="fastlinks">
-                        <li><a href="#">Новини</a></li>
-                        <li><a href="#">Блоги</a></li>
-                        <li><a href="#">Інформація про діяльність</a></li>
-                        <li><a href="#">Початкова школа</a></li>
-                        <li><a href="#">Благодійний фонд</a></li>
-                        <li><a href="#">Галерея</a></li>
-                        <li><a href="#">Вакансії</a></li>
+                        <li><a class="fast_link" href="news.html">Новини</a></li>
+                        <li><a class="fast_link" href="#">Блоги</a></li>
+                        <li><a class="fast_link" href="#">Інформація про діяльність</a></li>
+                        <li><a class="fast_link" href="#">Початкова школа</a></li>
+                        <li><a class="fast_link" href="#">Благодійний фонд</a></li>
+                        <li><a class="fast_link" href="#">Галерея</a></li>
+                        <li><a class="fast_link" href="#">Вакансії</a></li>
                     </ul>
                 </div>
             </div>

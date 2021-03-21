@@ -71,7 +71,7 @@ button {
 .banner {
     min-height: 801px;
     display: flex;
-    background: url('img/School.jpg') no-repeat center top /cover;
+    background: url('../img/School.jpg') no-repeat center top /cover;
 }
 .banner_container {
     max-width: 1760px;
@@ -125,7 +125,7 @@ h2 {
 
 .pupils {
     display: flex;
-    background: url("img/pupils-bg.jpg") no-repeat center top /cover;
+    background: url("../img/pupils-bg.jpg") no-repeat center top /cover;
 }
 .about {
     margin: 0 auto;
@@ -275,6 +275,13 @@ hr {
 .SemiBold {
     font-weight: 600;
 }
+.second_block a {
+    text-decoration: none;
+    color: black;
+}
+.second_block a :hover {
+    text-decoration: underline;
+}
 .text-link {
     display: flex;
     align-items: center;
@@ -289,9 +296,12 @@ hr {
     font-size: 24px;
     margin: 0;
 }
-.fastlinks li a {
+.fast_link {
     color: black;
     text-decoration: none;
+}
+.fast_link:hover {
+    text-decoration: underline;
 }
 
 @media screen and (max-width: 1720px) {
@@ -315,8 +325,8 @@ hr {
     }
 
     .banner {
-        min-height: 569px;
-        background: url('img/School-1366.jpg') no-repeat center top /cover;
+        min-height: 570px;
+        background: url('../img/School-1366.jpg') no-repeat center top /cover;
     }
     .banner_container {
         max-width: 1256px;
@@ -348,7 +358,7 @@ hr {
     }
 
     .pupils {
-        background: url("img/pupils-bg-1366.jpg") no-repeat center top /cover;
+        background: url("../img/pupils-bg-1366.jpg") no-repeat center top /cover;
     }
     .text_with_photo {
         height: 457px;
