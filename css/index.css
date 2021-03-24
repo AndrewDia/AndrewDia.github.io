@@ -67,6 +67,15 @@ button {
 .last {
     margin-right: 0 !important;
 }
+.tablet-title {
+    display: none;
+}
+.phone-title {
+    display: none;
+}
+.menu-open {
+    display: none;
+}
 
 .banner {
     min-height: 801px;
@@ -304,6 +313,12 @@ hr {
     text-decoration: underline;
 }
 
+@media screen and (max-width: 1760px) {
+    .banner_container {
+        max-width: 1720px;
+    }
+}
+
 @media screen and (max-width: 1720px) {
     .container {
         width: 1196px;
@@ -402,12 +417,11 @@ hr {
     }
     .number {
         font-size: 52px;
-        /*margin-top: 5px;*/
         margin-bottom: 0;
     }
     .month {
+        margin-top: -7px;
         font-size: 15px;
-        /*margin-top: -10px;*/
     }
     .calendar {
         padding: 11px 15px;
@@ -416,9 +430,7 @@ hr {
     hr {
         width: 489px;
     }
-    .news img:nth-child(1),
-    .news img:nth-child(2),
-    .news img:nth-child(3) {
+    .news img:nth-child(1) {
         width: 13px;
     }
     .news-title {
@@ -467,27 +479,700 @@ hr {
     }
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1270px) {
     .container {
-        width: 960px;
+        width: 1100px;
+    }
+    .banner_container {
+        max-width: 1140px;
+    }
+    .cover {
+        margin-top: 271px;
+        margin-right: 700px;
+        width: 518px;
+        height: 250px;
+    }
+    .title{
+        font-size: 36px;
+    }
+    .text_with_button button {
+        margin-top: 1em;
+        padding: 0.5em 1.4em;
+        font-size: 26px;
     }
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 1189px) {
     .container {
-        width: 720px;
+        width: 884px;
+    }
+    .logo-text p {
+        font-size: 13px;
+    }
+    .menu li a {
+        font-size: 15px;
+        margin-right: 1.5em;
+    }
+
+    .banner {
+        min-height: 426px;
+        background: url('../img/School-1024.jpg') no-repeat center top /cover;
+    }
+    .banner_container {
+        max-width: 924px;
+    }
+    .cover {
+        margin-top: 209px;
+        width: 425px;
+        height: 192px;
+    }
+    .title{
+        font-size: 30px;
+    }
+
+    .goal {
+        height: 344px;
+    }
+    .goal-container {
+        max-width: 734px;
+    }
+    h2 {
+        font-size: 28px;
+    }
+    .info {
+        font-size: 18px;
+    }
+    .author {
+        font-size: 15px;
+    }
+
+    .pupils {
+        background: url("../img/pupils-bg-1024.jpg") no-repeat center top /cover;
+    }
+    .text_with_photo {
+        height: 440px;
+    }
+    .text_with_button {
+        margin-left: 50px;
+    }
+    .text_with_button p {
+        font-size: 15px;
+    }
+    .text_with_button button {
+        margin-top: 20px;
+        padding: 10px 32px;
+        font-size: 22px;
+    }
+
+    .events_and_news {
+        margin-top: 80px;
+    }
+    .events_and_news_container {
+        width: 790px;
+    }
+    h3 {
+        font-size: 26px;
+        margin-bottom: 20px;
+    }
+    .single_event{
+        margin-bottom: 20px;
+    }
+    .event_on_this_date {
+        margin-left: 16px;
+        font-size: 18px;
+    }
+    .additional {
+        font-size: 16px;
+    }
+    .date {
+        width: 93px;
+        height: 78px;
+        border-radius: 14px;
+    }
+    .number {
+        font-size: 50px;
+        margin-bottom: 0;
+    }
+    .month {
+        margin-top: -7px;
+        font-size: 13px;
+    }
+    .calendar {
+        padding: 9px 15px;
+        font-size: 20px;
+    }
+    hr {
+        width: 367px;
+    }
+    .news-title {
+        font-size: 18px;
+        margin-top: 20px;
+        margin-bottom: 7px;
+    }
+    .publication_date {
+        margin-bottom: 20px;
+    }
+    .publication_date span {
+        font-size: 13px;
+        margin-left: 7px;
+    }
+    .news button {
+        margin-top: 19px;
+        padding: 9px 50px;
+        font-size: 20px;
+    }
+
+    .up img:nth-child(1){
+        width: 33px;
+    }
+    .up {
+        margin-top: -33px;
+        margin-left: -33px;
+    }
+    .footer-panel {
+        margin-top: 85px;
+        height: 250px;
+    }
+    .first_block img:nth-child(1) {
+        width: 131px;
+    }
+    .footer-block p {
+        font-size: 15px;
+    }
+    .second_block img {
+        width: 20px;
+    }
+    .social-net img {
+        width: 15px
+    }
+    .fastlinks {
+        font-size: 15px;
     }
 }
 
-@media screen and (max-width: 767px) {
-    .container {
-        width: 540px;
+@media screen and (max-width: 970px) {
+    .text_with_button {
+        margin-left: 2.5em;
+    }
+    .text_with_photo {
+        height: 430px;
+    }
+    .text_with_button button {
+        font-size: 20px;
+    }
+    .up img:nth-child(1){
+        width: 30px;
+    }
+    .up {
+        margin-top: -30px;
+        margin-left: -30px;
     }
 }
 
-@media screen and (max-width: 575px) {
+@media screen and (max-width: 960px) {
+    .container {
+        width: 855px;
+    }
+    .logo-text {
+        margin-left: 0.2em;
+    }
+    .logo-text p {
+        font-size: 12px;
+    }
+    .banner_container {
+        max-width: 880px;
+    }
+    .text_with_button {
+        margin-left: 2em;
+    }
+}
+
+@media screen and (max-width: 915px) {
+    .container {
+        width: 675px;
+    }
+    .header {
+        height: 76px;
+    }
+    .nav {
+        height: 76px;
+    }
+    .logo img:nth-child(1){
+        width: 65px;
+    }
+    .logo-text {
+        display: none;
+    }
+    .menu {
+        display: none;
+    }
+    .tablet-title {
+        display: block;
+        font-size: 22px;
+        font-family: 'Merriweather', serif;
+        text-align: center;
+    }
+    .menu-open {
+        display: block;
+        background-color: transparent;
+        letter-spacing: 0;
+    }
+
+    .banner {
+        background: url('../img/School-tablet.jpg') no-repeat center top /cover;
+    }
+    .cover {
+        display: none;
+    }
+
+    .goal {
+        height: 245px;
+    }
+    .goal-container {
+        width: 577px;
+    }
+    h2 {
+        font-size: 24px;
+        margin: 0;
+    }
+    .info {
+        margin-top: 8px;
+        font-size: 15px;
+    }
+    .author {
+        font-size: 14px;
+        margin-bottom: 0;
+    }
+
+    .pupils {
+        background: transparent;
+    }
+    .text_with_photo {
+        display: none;
+    }
+    .text_with_button {
+        margin-top: 50px;
+        margin-left: 0;
+    }
+    .text_with_button p {
+        text-align: center;
+    }
+    .text_with_button button {
+        margin-top: 30px;
+        font-size: 18px;
+    }
+
+    .events_and_news_container {
+        width: 675px;
+    }
+    h3 {
+        font-size: 23px;
+        margin-bottom: 20px;
+    }
+    .single_event{
+        margin-bottom: 17px;
+    }
+    .event_on_this_date {
+        margin-left: 14px;
+        font-size: 16px;
+    }
+    .additional {
+        font-size: 14px;
+    }
+    .date {
+        width: 81px;
+        height: 68px;
+        border-radius: 12px;
+    }
+    .number {
+        font-size: 44px;
+        margin-bottom: 0;
+    }
+    .month {
+        margin-top: -7px;
+        font-size: 11px;
+    }
+    .calendar {
+        padding: 8px 14px;
+        font-size: 18px;
+    }
+    hr {
+        width: 320px;
+    }
+    .news-title {
+        font-size: 16px;
+        margin-top: 14px;
+        margin-bottom: 7px;
+    }
+    .publication_date {
+        margin-bottom: 14px;
+    }
+    .publication_date span {
+        font-size: 13px;
+        margin-left: 7px;
+    }
+    .news button {
+        margin-top: 21px;
+        padding: 8px 38px;
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    .footer-panel {
+        height: 260px;
+    }
+    .first_block {
+        display: none;
+    }
+    .footer-block p {
+        line-height: 1.5;
+    }
+    .fastlinks {
+        line-height: 1.5;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .container {
+        width: 593px;
+    }
+    .nav {
+        height: 76px;
+    }
+
+    .banner {
+        background: url('../img/School-horiz.jpg') no-repeat center top /cover;
+        min-height: 299px;
+    }
+
+    .goal {
+        height: 225px;
+    }
+    .goal-container {
+        width: 553px;
+    }
+    .info {
+        margin-top: 8px;
+        font-size: 14px;
+    }
+    .author {
+        font-size: 13px;
+    }
+
+    .text_with_button button {
+        margin-top: 40px;
+        font-size: 16px;
+    }
+
+    .events_and_news_container {
+        width: 553px;
+    }
+    h3 {
+        font-size: 20px;
+        margin-bottom: 14px;
+    }
+    .single_event{
+        margin-bottom: 12px;
+    }
+    .event_on_this_date {
+        margin-left: 9px;
+        font-size: 13px;
+    }
+    .additional {
+        font-size: 12px;
+    }
+    .date {
+        width: 56px;
+        height: 48px;
+        border-radius: 8px;
+    }
+    .number {
+        font-size: 28px;
+    }
+    .month {
+        margin-top: -5px;
+        font-size: 9px;
+    }
+    .calendar {
+        padding: 8px 9px;
+        font-size: 14px;
+    }
+    hr {
+        width: 265px;
+    }
+    .news-title {
+        font-size: 13px;
+        margin-top: 10px;
+        margin-bottom: 3px;
+    }
+    .news img:nth-child(1) {
+        width: 9px;
+    }
+    .publication_date {
+        margin-bottom: 9px;
+    }
+    .publication_date span {
+        font-size: 9px;
+        margin-left: 3px;
+    }
+    .news button {
+        margin-top: 13px;
+        padding: 8px 17px;
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    .footer-panel {
+        height: 280px;
+    }
+    .first_block {
+        display: none;
+    }
+    .footer-block p {
+        line-height: 1.7;
+        font-size: 14px;
+    }
+    .fastlinks {
+        line-height: 1.7;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    h1 {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 600px) {
     .container {
         width: 100%;
-        padding: 0 15px;
+    }
+    .logo img:nth-child(1){
+        margin-left: 20px;
+        width: 60px;
+    }
+    .nav {
+        width: 100%;
+    }
+    .tablet-title {
+        display: none;
+    }
+    .phone-title {
+        display: block;
+        font-size: 18px;
+        font-family: 'Merriweather', serif;
+        text-align: center;
+    }
+    .menu-open {
+        margin-right: 20px;
+    }
+
+    .banner {
+        background: url('../img/School-mob.jpg') no-repeat center top /cover;
+        min-height: 256px;
+    }
+
+    .goal {
+        width: 100%;
+        height: 274px;
+    }
+    .goal-container {
+        width: 100%;
+    }
+    .goal-text {
+        width: 85%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .author {
+        font-size: 14px;
+    }
+    .info {
+        margin-top: 12px;
+        font-size: 14px;
+    }
+    h2 {
+        font-size: 23px;
+    }
+
+    .text_with_button p {
+        width: 85%;
+        margin: 0 auto;
+        font-size: 14px;
+    }
+
+    .events_and_news_container {
+        width: 100%;
+    }
+    .events_and_news_container {
+        flex-wrap: wrap;
+    }
+    h3 {
+        font-size: 24px;
+    }
+    .single_event{
+        margin-bottom: 16px;
+    }
+    .event_on_this_date {
+        margin-left: 14px;
+        font-size: 15px;
+    }
+    .additional {
+        font-size: 14px;
+    }
+    .date {
+        width: 71px;
+        height: 61px;
+        border-radius: 10px;
+    }
+    .number {
+        font-size: 37px;
+    }
+    .month {
+        margin-top: -5px;
+        font-size: 11px;
+    }
+    .calendar {
+        padding: 12px 17px;
+        font-size: 16px;
+    }
+    hr {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .news-title {
+        font-size: 15px;
+        margin-top: 12px;
+        margin-bottom: 5px;
+    }
+    .news img:nth-child(1) {
+        width: 11px;
+    }
+    .publication_date {
+        margin-bottom: 12px;
+    }
+    .publication_date span {
+        font-size: 11px;
+        margin-left: 5px;
+    }
+    .news button {
+        margin-top: 25px;
+        padding: 12px 18px;
+        font-size: 16px;
+        font-weight: 600;
+    }
+    .events, .news {
+        margin: 0 auto;
+    }
+    .news {
+        margin-top: 50px;
+    }
+
+    .footer-panel {
+        margin-top: 50px;
+        height: 480px;
+        text-align: center;
+    }
+    .footer-block {
+        flex-wrap: wrap;
+        width: 70%;
+        margin: 0 auto;
+        justify-content: center;
+    }
+    .second_block {
+        margin-top: 20px;
+    }
+    .link-block {
+        display: none;
+    }
+    .social-net {
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .phone-title {
+        font-size: 15px;
+    }
+    .logo img:nth-child(1){
+        margin-left: 15px;
+    }
+    .menu-open {
+        margin-right: 15px;
+    }
+
+    .goal {
+        height: 300px;
+    }
+
+    .events_and_news_container {
+        width: 553px;
+    }
+    h3 {
+        font-size: 20px;
+        margin-bottom: 14px;
+    }
+    .single_event{
+        margin-bottom: 12px;
+    }
+    .event_on_this_date {
+        margin-left: 9px;
+        font-size: 14px;
+    }
+    .additional {
+        font-size: 12px;
+    }
+    .date {
+        width: 56px;
+        height: 48px;
+        border-radius: 8px;
+    }
+    .number {
+        font-size: 28px;
+    }
+    .month {
+        margin-top: -5px;
+        font-size: 9px;
+    }
+    .calendar {
+        margin-top: 10px;
+        padding: 8px 12px;
+        font-size: 15px;
+    }
+    hr {
+        width: 265px;
+    }
+    .news-title {
+        font-size: 14px;
+        margin-top: 10px;
+        margin-bottom: 3px;
+    }
+    .news img:nth-child(1) {
+        width: 10px;
+    }
+    .publication_date {
+        margin-bottom: 9px;
+    }
+    .publication_date span {
+        font-size: 10px;
+        margin-left: 3px;
+    }
+    .news button {
+        margin-top: 15px;
+        padding: 8px 17px;
+        font-size: 15px;
+    }
+    .events_and_news_container {
+        width: 100%;
+    }
+    .events_and_news_container {
+        flex-wrap: wrap;
+    }
+    .events, .news {
+        margin: 0 auto;
+    }
+    .news {
+        margin-top: 50px;
     }
 }
