@@ -318,7 +318,7 @@ main {
 
 @media screen and (max-width: 767px) {
     body {
-        font-size: 14px;
+        font-size: 15px;
     }
     .container {
         width: 540px;
@@ -330,6 +330,9 @@ main {
         width: 65px;
     }
     .header {
+        height: 76px;
+    }
+    .nav {
         height: 76px;
     }
     .tablet-title {
@@ -362,9 +365,6 @@ main {
 }
 
 @media screen and (max-width: 575px) {
-    body {
-        font-size: 14px;
-    }
     .container {
         width: 100%;
     }
@@ -432,7 +432,7 @@ main {
         display: none;
     }
     .footer-block p {
-        font-size: 14px;
+        font-size: 15px;
     }
     .second_block img {
         width: 20px;
@@ -441,7 +441,7 @@ main {
         width: 15px
     }
     .fastlinks {
-        font-size: 14px;
+        font-size: 15px;
     }
 }
 
@@ -451,7 +451,7 @@ main {
         justify-content: center;
     }
     .footer-panel {
-        height: 480px;
+        height: 500px;
         text-align: center;
     }
     .social-net {

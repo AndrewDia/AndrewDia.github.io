@@ -852,10 +852,10 @@ hr {
     }
     .info {
         margin-top: 8px;
-        font-size: 14px;
+        font-size: 15px;
     }
     .author {
-        font-size: 13px;
+        font-size: 14px;
     }
 
     .text_with_button button {
@@ -917,7 +917,7 @@ hr {
     .news button {
         margin-top: 13px;
         padding: 8px 17px;
-        font-size: 14px;
+        font-size: 15px;
         font-weight: 600;
     }
 
@@ -929,11 +929,11 @@ hr {
     }
     .footer-block p {
         line-height: 1.7;
-        font-size: 14px;
+        font-size: 15px;
     }
     .fastlinks {
         line-height: 1.7;
-        font-size: 14px;
+        font-size: 15px;
     }
 }
 
@@ -1068,26 +1068,48 @@ hr {
     .news {
         margin-top: 50px;
     }
-
     .footer-panel {
         margin-top: 50px;
-        height: 480px;
-        text-align: center;
+        height: 270px;
     }
     .footer-block {
         flex-wrap: wrap;
-        width: 70%;
+        width: 90%;
         margin: 0 auto;
-        justify-content: center;
-    }
-    .second_block {
-        margin-top: 20px;
+        justify-content: space-around;
     }
     .link-block {
         display: none;
     }
+    .footer-block p {
+        font-size: 15px;
+    }
+    .second_block img {
+        width: 20px;
+    }
+    .social-net img {
+        width: 15px
+    }
+    .fastlinks {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .footer-block {
+        width: 70%;
+        justify-content: center;
+    }
+    .footer-panel {
+        margin-top: 50px;
+        height: 500px;
+        text-align: center;
+    }
     .social-net {
         margin: 0 auto;
+    }
+    .second_block {
+        margin-top: 20px;
     }
 }
 

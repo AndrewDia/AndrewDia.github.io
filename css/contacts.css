@@ -64,47 +64,92 @@ body {
     display: none;
 }
 
+main {
+    margin-bottom: 4.3em;
+}
+.inner_container {
+    width: 1396px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
 .title {
     height: 135px;
     background: #01416F;
-    margin-bottom: 6em;
+    margin-bottom: 3.75em;
 }
-.news_inner_container {
-    width: 1396px;
-    margin: 0 auto;
+.title-text {
+    height: 135px;
+    align-items: center;
+    display: flex;
 }
 h1 {
     font-weight: bold;
-    font-size: 60px;
+    font-size: 2.5em;
     color: #FFFFFF;
     font-family: 'Merriweather', serif;
     margin: 0;
 }
-.title-panel {
-    height: 135px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.text-block {
+    width: 35%;
+    margin: 0;
 }
-.search {
-    display: flex;
-    align-items: center;
+.map-block {
+    width: 65%;
+    margin: 0;
 }
-.search input[type=text] {
-    height: 100%;
-    padding-top: 7px;
-    padding-bottom: 7px;
-    padding-left: 20px;
+.map {
+    margin-top: 0.3em;
+    height: 88%;
+    overflow: hidden;
+}
+.text-block p {
+    margin: 0 auto;
+}
+h2 {
+    font-weight: 600;
+    color: #01416F;
+    font-size: 1em;
+    margin: 0;
+}
+.feedback {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    background: #01416F;
+    height: 30.3em;
+}
+h3 {
+    font-weight: 600;
+    font-size: 1.2em;
+    color: #FFFFFF;
+    margin-bottom: 1em;
+    margin-top: 0;
+}
+input[type=text] {
+    margin-left: auto;
+    margin-right: auto;
+    width: 27.83em;
+    border-radius: 15px;
+    border: none;
     font-size: 24px;
+    color: #01416F;
     outline: none;
+    background: #EFEFEF;
 }
-.search-button {
-    margin-left: 0.5em;
+.name_and_email {
+    padding: 0.42em 0 0.42em 1.25em;
+    margin-bottom: 0.8em;
 }
-
+.message {
+    padding: 0.42em 0 9.46em 1.25em;
+}
 button {
     background-color: #F7941D;
     border: none;
+    margin-left: auto;
+    margin-right: auto;
     color: white;
     text-align: center;
     text-decoration: none;
@@ -117,51 +162,10 @@ button {
     width: 11em;
     height: 2.4em;
     font-size: 1.25em;
-    margin-top: 2em;
+    margin-top: 1em;
 }
-h2 {
-    font-weight: bold;
-    font-size: 36px;
-    color: #01416F;
-    margin-top: 0;
-    margin-bottom: 0.5em;
-}
-.photo_with_text {
-    display: flex;
-}
-.text_with_button {
-    margin-left: 3em;
-}
-.text_with_button p {
-    margin: 0;
-}
-hr {
-    margin-top: 3em;
-    margin-bottom: 3em;
-    border-top: 1px solid lightgray;
-}
-.picture {
-    width: 360px;
-    height: 200px;
-    position: relative;
-}
-.cover {
-    float: left;
-    position: absolute;
-    left: 0;
-    top: 0;
-    z-index: 1000;
-    background: rgba(159, 216, 237, 0.3);
-    width: 360px;
-    height: 200px;
-}
-.picture img {
-    width: 360px;
-    height: 200px;
-    object-fit: cover;
-}
-.title_for_phone {
-    display: none;
+button:active {
+    background: #EB7139;
 }
 
 /*Footer*/
@@ -223,7 +227,7 @@ hr {
     text-decoration: underline;
 }
 
-@media screen and (max-width: 1700px) {
+@media screen and (max-width: 1720px) {
     body {
         font-size: 17px;
     }
@@ -246,42 +250,21 @@ hr {
         font-size: 17px;
     }
 
+    .inner_container {
+        width: 994px;
+    }
     .title {
         height: 96px;
     }
-    .news_inner_container {
-        width: 995px;
-    }
-    h1 {
-        font-size: 43px;
-    }
-    .title-panel {
+    .title-text {
         height: 96px;
     }
-    .search input[type=text] {
-        padding-top: 5px;
-        padding-bottom: 5px;
-        padding-left: 15px;
+    .feedback {
+        height: 30.3em;
+    }
+    input[type=text] {
+        border-radius: 11px;
         font-size: 17px;
-    }
-    .search-button {
-        width: 33px;
-    }
-
-    h2 {
-        font-size: 26px;
-    }
-    .picture {
-        width: 256px;
-        height: 142px;
-    }
-    .cover {
-        width: 256px;
-        height: 142px;
-    }
-    .picture img {
-        width: 256px;
-        height: 142px;
     }
 
     .up img:nth-child(1){
@@ -292,7 +275,6 @@ hr {
         margin-left: -33px;
     }
     .footer-panel {
-        margin-top: 105px;
         height: 275px;
     }
     .first_block img:nth-child(1) {
@@ -319,8 +301,16 @@ hr {
     .menu li a{
         margin-right: 1.2em;
     }
-    .news_inner_container {
-        width: 960px;
+    .inner_container {
+        width: 920px;
+    }
+    .text-block {
+        width: 30%;
+        margin: 0;
+    }
+    .map-block {
+        width: 70%;
+        margin: 0;
     }
 }
 
@@ -331,7 +321,7 @@ hr {
     .container {
         width: 720px;
     }
-    .news_inner_container {
+    .inner_container {
         width: 720px;
     }
     .logo-text {
@@ -355,35 +345,6 @@ hr {
         font-size: 1.25em;
     }
 
-    .title {
-        margin-bottom: 4em;
-    }
-    h1 {
-        font-size: 36px;
-    }
-
-    h2 {
-        font-size: 22px;
-    }
-    .picture {
-        width: 230px;
-        height: 150px;
-    }
-    .cover {
-        width: 230px;
-        height: 150px;
-    }
-    .picture img {
-        width: 230px;
-        height: 150px;
-    }
-    .text_with_button {
-        margin-left: 2.4em;
-    }
-
-    .footer-panel {
-        margin-top: 4em;
-    }
     .footer-block p {
         font-size: 15px;
         line-height: 1.5;
@@ -408,12 +369,12 @@ hr {
 
 @media screen and (max-width: 767px) {
     body {
-        font-size: 14px;
+        font-size: 15px;
     }
     .container {
         width: 540px;
     }
-    .news_inner_container {
+    .inner_container {
         width: 540px;
     }
     .logo img:nth-child(1){
@@ -431,49 +392,28 @@ hr {
 
     .title {
         height: 57px;
+        margin-bottom: 2em;
     }
-    .title-panel {
+    .title-text {
         height: 57px;
     }
     h1 {
         font-size: 22px;
     }
-    .search input[type=text] {
-        padding-top: 4px;
-        padding-bottom: 4px;
-        padding-left: 10px;
-        font-size: 12px;
+    .main {
+        margin-bottom: 2em;
     }
-    .search-button {
-        width: 24px;
+    .text-block {
+        width: 40%;
     }
-    .picture {
-        width: 215px;
-        height: 133px;
+    .map-block {
+        width: 60%;
     }
-    .cover {
-        width: 215px;
-        height: 133px;
+    h3 {
+        font-size: 1em;
     }
-    .picture img {
-        width: 215px;
-        height: 133px;
-    }
-    .title_for_phone {
-        display: block;
-        font-weight: bold;
-        font-size: 18px;
-        color: #01416F;
-        margin-bottom: 12px;
-    }
-    .text_with_button h2 {
-        display: none;
-    }
-    .text_with_button {
-        margin-left: 1.6em;
-    }
-    button {
-        margin-top: 20px;
+    input[type=text] {
+        width: 21.53em;
     }
 
     .footer-block p {
@@ -499,9 +439,11 @@ hr {
     .container {
         width: 100%;
     }
-    .news_inner_container {
+    .inner_container {
         width: 85%;
         margin: 0 auto;
+        flex-wrap: wrap;
+        justify-content: center;
     }
     .logo img:nth-child(1){
         margin-left: 20px;
@@ -529,51 +471,46 @@ hr {
 
     .title {
         height: 64px;
-        margin-bottom: 3em;
     }
-    .title-panel {
-        justify-content: center;
+    .title-text {
         height: 64px;
     }
-    .search {
-        display: none;
+    .text-block {
+        width: 100%;
     }
-
-    .photo_with_text {
-        flex-wrap: wrap;
-        justify-content: center;
+    .map-block {
+        width: 100%;
+        margin-top: 1.5em;
     }
-    .text_with_button {
+    .map {
+        margin-top: 0.5em;
+        height: 220px;
+    }
+    main {
+        margin-bottom: 2.5em;
+    }
+    .feedback {
+        height: 26.5em;
+    }
+    h3 {
+        width: 85%;
         margin-left: auto;
         margin-right: auto;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        margin-bottom: 0.55em;
     }
-    .text_with_button p {
-        margin-top: 15px;
-        margin-left: 0
+    input[type=text] {
+        width: 75%;
+        border-radius: 7px;
+        font-size: 15px;
     }
-    .picture {
-        width: 90%;
-        height: 185px;
+    .name_and_email {
+        padding: 0.4em 0 0.4em 0.67em;
+        margin-bottom: 0.6em;
     }
-    .cover {
-        width: 100%;
-        height: 185px;
-    }
-    .picture img {
-        width: 100%;
-        height: 185px;
-    }
-    .title_for_phone {
-        margin-bottom: 15px;
+    .message {
+        padding: 0.4em 0 7.73em 0.67em;
     }
 
-    .footer-panel {
-        margin-top: 50px;
-        height: 270px;
-    }
     .footer-block {
         flex-wrap: wrap;
         width: 90%;
@@ -603,7 +540,6 @@ hr {
         justify-content: center;
     }
     .footer-panel {
-        margin-top: 50px;
         height: 500px;
         text-align: center;
     }
