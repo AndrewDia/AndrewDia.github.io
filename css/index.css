@@ -715,7 +715,6 @@ hr {
     .menu-open {
         display: block;
         background-color: transparent;
-        letter-spacing: 0;
     }
 
     .banner {
