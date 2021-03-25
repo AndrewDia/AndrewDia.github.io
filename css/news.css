@@ -490,14 +490,120 @@ hr {
 
 @media screen and (max-width: 575px) {
     body {
-        font-size: 15px;
+        font-size: 14px;
     }
     .container {
         width: 100%;
-        padding: 0 15px;
     }
     .news_inner_container {
+        width: 85%;
+        margin: 0 auto;
+    }
+    .logo img:nth-child(1){
+        margin-left: 20px;
+        width: 60px;
+    }
+    .header {
+        height: 83px;
+    }
+    .nav {
         width: 100%;
-        padding: 0 15px;
+        margin: 0 auto;
+    }
+    .tablet-title {
+        display: none;
+    }
+    .phone-title {
+        display: block;
+        font-size: 18px;
+        font-family: 'Merriweather', serif;
+        text-align: center;
+    }
+    .menu-open {
+        margin-right: 20px;
+    }
+
+    .title {
+        height: 64px;
+        margin-bottom: 3em;
+    }
+    .title-panel {
+        justify-content: center;
+        height: 64px;
+    }
+    .search {
+        display: none;
+    }
+
+    .photo_with_text {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .text_with_button {
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .text_with_button p {
+        margin-top: 15px;
+        margin-left: 0
+    }
+    button {
+
+    }
+    .picture {
+        width: 90%;
+        height: 185px;
+    }
+    .cover {
+        width: 100%;
+        height: 185px;
+    }
+    .picture img {
+        width: 100%;
+        height: 185px;
+    }
+    .title_for_phone {
+        margin-bottom: 15px;
+    }
+    .footer-panel {
+        margin-top: 50px;
+        height: 480px;
+        text-align: center;
+    }
+    .footer-block {
+        flex-wrap: wrap;
+        width: 70%;
+        margin: 0 auto;
+        justify-content: center;
+    }
+    .second_block {
+        margin-top: 20px;
+    }
+    .link-block {
+        display: none;
+    }
+    .social-net {
+        margin: 0 auto;
+    }
+    .footer-block p {
+        font-size: 14px;
+    }
+    .second_block img {
+        width: 20px;
+    }
+    .social-net img {
+        width: 15px
+    }
+    .fastlinks {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .phone-title {
+        font-size: 15px;
     }
 }

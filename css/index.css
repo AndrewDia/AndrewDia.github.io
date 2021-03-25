@@ -953,6 +953,7 @@ hr {
     }
     .nav {
         width: 100%;
+        margin: 0 auto;
     }
     .tablet-title {
         display: none;
