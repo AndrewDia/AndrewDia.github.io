@@ -550,9 +550,6 @@ hr {
         margin-top: 15px;
         margin-left: 0
     }
-    button {
-
-    }
     .picture {
         width: 90%;
         height: 185px;
@@ -568,25 +565,19 @@ hr {
     .title_for_phone {
         margin-bottom: 15px;
     }
+
     .footer-panel {
         margin-top: 50px;
-        height: 480px;
-        text-align: center;
+        height: 270px;
     }
     .footer-block {
         flex-wrap: wrap;
-        width: 70%;
+        width: 90%;
         margin: 0 auto;
-        justify-content: center;
-    }
-    .second_block {
-        margin-top: 20px;
+        justify-content: space-around;
     }
     .link-block {
         display: none;
-    }
-    .social-net {
-        margin: 0 auto;
     }
     .footer-block p {
         font-size: 14px;
@@ -599,6 +590,24 @@ hr {
     }
     .fastlinks {
         font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .footer-block {
+        width: 70%;
+        justify-content: center;
+    }
+    .footer-panel {
+        margin-top: 50px;
+        height: 480px;
+        text-align: center;
+    }
+    .social-net {
+        margin: 0 auto;
+    }
+    .second_block {
+        margin-top: 20px;
     }
 }
 
