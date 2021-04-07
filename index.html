@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lora:wght@700&family=Merriweather:wght@400;700&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap"
           rel="stylesheet">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="shortcut icon" href="img/logo.png" type="image/png">
     <title>Шепетівська ЗОШ №1</title>
 </head>
 <body>
@@ -29,20 +30,123 @@
             </div>
             <div>
                 <ul class="menu">
-                    <li><a href="index.html">Про школу</a></li>
-                    <li><a href="news.html">Новини</a></li>
-                    <li><a href="#">Учням</a></li>
-                    <li><a href="#">Вчителям</a></li>
+                    <li><a href="index.html">Про школу</a>
+                        <ul>
+                            <li><a href="#">Інформація про діяльність навчального закладу</a></li>
+                            <li><a href="#">Адміністрація</a></li>
+                            <li><a href="#">Режим роботи</a></li>
+                            <li><a href="#">Нова українська школа</a></li>
+                            <li><a href="#">Військово-патріотичне виховання</a></li>
+                            <li><a href="#">Правове виховання</a></li>
+                            <li><a href="#">Соціально-психологічна служба</a></li>
+                            <li><a href="#">Медична служба</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="news.html">Новини</a>
+                        <ul>
+                            <li><a href="#">Фотогалерея</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="schedule.html">Учням</a>
+                        <ul>
+                            <li><a href="schedule.html">Розклад</a></li>
+                            <li><a href="#">ЗНО-2021</a></li>
+                            <li><a href="#">Блоги</a></li>
+                            <li><a href="#">Healthy Schools</a></li>
+                            <li><a href="#">STOP Булінг</a></li>
+                            <li><a href="#">Правила поведінки здобувачів освіти</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Вчителям</a>
+                        <ul>
+                            <li><a href="#">Педрада</a></li>
+                            <li><a href="#">Підвищення кваліфікації</a></li>
+                        </ul>
+                    </li>
                     <li><a href="#">Календар</a></li>
-                    <li><a href="contacts.html" class="last">Контакти</a></li>
+                    <li class="last"><a href="contacts.html">Контакти</a>
+                        <ul>
+                            <li><a href="#">Вакансії</a></li>
+                        </ul>
+                    </li>
                 </ul>
-                <button class="menu-open">
-                    <img src="img/menu.svg" alt="Open menu">
-                </button>
+                <div class="menu-open">
+                    <span></span>
+                </div>
+                <nav class="menu__body">
+                    <ul class="menu__list">
+                        <li>
+                            <a href="index.html" class="menu__link">Про школу</a>
+                            <span class="menu__arrow"></span>
+                            <ul class="menu__sub-list">
+                                <li><a href="" class="menu__sub-link">Інформація про діяльність навчального закладу</a></li>
+                                <li><a href="" class="menu__sub-link">Адміністрація</a></li>
+                                <li><a href="#" class="menu__sub-link">Режим роботи</a></li>
+                                <li><a href="#" class="menu__sub-link">Нова українська школа</a></li>
+                                <li><a href="#" class="menu__sub-link">Військово-патріотичне виховання</a></li>
+                                <li><a href="#" class="menu__sub-link">Правове виховання</a></li>
+                                <li><a href="#" class="menu__sub-link">Соціально-психологічна служба</a></li>
+                                <li><a href="#" class="menu__sub-link">Медична служба</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="news.html" class="menu__link">Новини</a>
+                            <span class="menu__arrow"></span>
+                            <ul class="menu__sub-list"><li><a href="" class="menu__sub-link">Фотогалерея</a></li></ul>
+                        </li>
+                        <li>
+                            <a href="schedule.html" class="menu__link">Учням</a>
+                            <span class="menu__arrow"></span>
+                            <ul class="menu__sub-list">
+                                <li><a href="schedule.html" class="menu__sub-link">Розклад</a></li>
+                                <li><a href="#" class="menu__sub-link">ЗНО-2021</a></li>
+                                <li><a href="#" class="menu__sub-link">Блоги</a></li>
+                                <li><a href="#" class="menu__sub-link">Healthy Schools</a></li>
+                                <li><a href="#" class="menu__sub-link">STOP Булінг</a></li>
+                                <li><a href="#" class="menu__sub-link">Правила поведінки здобувачів освіти</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="" class="menu__link">Вчителям</a>
+                            <span class="menu__arrow"></span>
+                            <ul class="menu__sub-list">
+                                <li><a href="" class="menu__sub-link">Педрада</a></li>
+                                <li><a href="#" class="menu__sub-link">Підвищення кваліфікації</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="" class="menu__link">Календар</a></li>
+                        <li>
+                            <a href="contacts.html" class="menu__link">Контакти</a>
+                            <span class="menu__arrow"></span>
+                            <ul class="menu__sub-list"><li><a href="" class="menu__sub-link">Вакансії</a></li></ul>
+                        </li>
+                    </ul>
+                </nav>
             </div>
         </nav>
     </div>
 </header>
+<script>
+    let menuArrows = document.querySelectorAll('.menu__arrow');
+    if (menuArrows.length > 0) {
+        for (let i = 0; i < menuArrows.length; i++) {
+            const menuArrow = menuArrows[i];
+            menuArrow.addEventListener("click", function (e) {
+                menuArrow.parentElement.classList.toggle('_active');
+            });
+        }
+    }
+
+    const iconMenu = document.querySelector('.menu-open');
+    if (iconMenu) {
+        const menuBody = document.querySelector('.menu__body');
+        iconMenu.addEventListener("click", function (e) {
+            document.body.classList.toggle('_lock');
+            iconMenu.classList.toggle('_active');
+            menuBody.classList.toggle('_active');
+        });
+    }
+</script>
 <section class="banner">
     <div class="banner_container">
         <div class="cover">
@@ -149,7 +253,9 @@
                 </div>
             </div>
             <hr class="last-hr">
-            <button onclick="document.location='news.html'">Дізнатися більше</button>
+            <form action="news.php?=news">
+                <button>Дізнатися більше</button>
+            </form>
         </div>
     </div>
 </section>
@@ -214,7 +320,7 @@
                         <li><a class="fast_link" href="#">Початкова школа</a></li>
                         <li><a class="fast_link" href="#">Благодійний фонд</a></li>
                         <li><a class="fast_link" href="#">Галерея</a></li>
-                        <li><a class="fast_link" href="#">Вакансії</a></li>
+                        <li><a class="fast_link" href="contacts.html">Вакансії</a></li>
                     </ul>
                 </div>
             </div>
