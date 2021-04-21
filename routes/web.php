@@ -13,6 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'PagesController@index');
+Route::get('/news{newsNum?}', 'PagesController@news');
+Route::get('/schedule', 'PagesController@schedule');
+Route::get('/contacts', 'PagesController@contacts');
+
+Route::post('/contacts', 'ContactController@submit');

@@ -1,0 +1,1394 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+button {
+    background-color: #F7941D;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: bold;
+    cursor: pointer;
+    user-select: none;
+    outline: none;
+    letter-spacing: 0.01em;
+}
+
+.header {
+    height: 116px;
+    background: #9FD8ED;
+}
+.container {
+    width: 1680px;
+    margin: 0 auto;
+}
+.nav {
+    height: 116px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    display: flex;
+    align-items: center;
+}
+.logo-text {
+    margin-left: 0.7em;
+}
+.nav a {
+    display: block;
+    text-decoration: none;
+}
+.logo-text p {
+    color: black;
+    font-family: 'Merriweather', serif;
+    font-size: 20px;
+    line-height: 1.5;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.menu {
+    display: flex;
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+}
+.last {
+    padding-right: 0 !important;
+}
+.tablet-title, .phone-title {
+    display: none;
+}
+.menu-open, .menu__body {
+    display: none;
+}
+
+.menu ul {
+    padding-left: 0;
+}
+.menu li {
+    color: #01416F;
+    background: #9FD8ED;
+    display: block;
+    padding: 0.8rem 2.3em 0.8em 2.3em;
+    position: relative;
+    text-decoration: none;
+    transition-duration: 0.5s;
+}
+.menu li a{
+    color: #01416F;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+}
+.menu li:hover  {
+    cursor: pointer;
+}
+.menu li:focus-within a {
+    outline: none;
+}
+ul li ul {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    margin-top: 0.8rem;
+    left: 0;
+    display: none;
+}
+ul li:hover > ul,
+ul li ul:hover {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+}
+ul li ul li:hover {
+    background: #BBE3F2;
+}
+ul li ul li {
+    clear: both;
+    width: 100%;
+}
+ul li ul li a {
+    letter-spacing: 0 !important;
+    font-weight: 400 !important;
+    text-transform: none !important;
+}
+
+.banner {
+    min-height: 801px;
+    display: flex;
+    background: url('../img/School.jpg') no-repeat center top /cover;
+}
+.banner_container {
+    max-width: 1760px;
+    margin: 0 auto;
+}
+.cover {
+    margin-top: 364px;
+    margin-right: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 823px;
+    height: 360px;
+    background: rgba(196, 196, 196, 0.4);
+}
+.title {
+    font-family: 'Merriweather', serif;
+    font-weight: bold;
+    font-size: 58px;
+    color: #000000;
+}
+
+.goal {
+    height: 525px;
+    background: #EFEFEF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.goal-container {
+    max-width: 1114px;
+    margin: 0 auto;
+}
+h2 {
+    font-family: 'Merriweather', serif;
+    font-weight: bold;
+    font-size: 43px;
+    text-align: center;
+}
+.info {
+    font-weight: 600;
+    font-size: 28px;
+    text-align: center;
+}
+.author {
+    font-style: italic;
+    font-weight: normal;
+    font-size: 25px;
+    text-align: center;
+}
+
+.pupils {
+    display: flex;
+    background: url("../img/pupils-bg.jpg") no-repeat center top /cover;
+}
+.about {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+.text_with_photo {
+    display: flex;
+    align-items: center;
+    min-width: 50%;
+    height: 641px;
+}
+.text_with_button {
+    margin-left: 80px;
+    text-align: center;
+}
+.text_with_button p {
+    font-size: 24px;
+    text-align: justify;
+    margin: 0;
+}
+.text_with_button button {
+    margin-top: 43px;
+    padding: 17px 45px;
+    font-size: 36px;
+}
+
+.events_and_news {
+    margin-top: 150px;
+}
+.events_and_news_container {
+    width: 1396px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+h3 {
+    font-family: 'Merriweather', serif;
+    font-weight: bold;
+    font-size: 44px;
+    letter-spacing: 0.04em;
+    color: #01416F;
+    margin-top: 0;
+    margin-bottom: 42px;
+}
+.single_event{
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.event_on_this_date {
+    margin-left: 30px;
+    font-weight: bold;
+    font-size: 30px;
+    color: #01416F;
+}
+.additional {
+    font-weight: normal;
+    font-size: 26px;
+    color: #01416F;
+}
+.date {
+    background: #F7941D;
+    color: #FFFFFF;
+    width: 140px;
+    height: 120px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.number {
+    font-family: 'Lora', serif;
+    font-weight: bold;
+    font-size: 72px;
+    letter-spacing: 0.04em;
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+.month {
+    font-weight: 600;
+    font-size: 21px;
+    margin-top: -10px;
+}
+.calendar {
+    padding: 16px 20px;
+    font-size: 30px;
+    float: right;
+}
+hr {
+    width: 688px;
+    border-top: 1px solid lightgray;
+    margin: 0;
+}
+.news-title {
+    font-weight: bold;
+    font-size: 30px;
+    color: #01416F;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+.publication_date {
+    align-items: center;
+    display: flex;
+    margin-bottom: 30px;
+}
+.publication_date span {
+    color: #555555;
+    font-size: 18px;
+    margin-left: 10px;
+}
+.news button {
+    margin-top: 37px;
+    padding: 16px 61px;
+    font-size: 30px;
+    float: right;
+}
+
+.up {
+    margin-top: -45px;
+    margin-left: -45px;
+    float: right;
+}
+.footer-panel {
+    margin-top: 150px;
+    height: 384px;
+    background: #EFEFEF;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.first_block {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.footer-block p {
+    font-size: 24px;
+    margin: 0
+}
+.SemiBold {
+    font-weight: 600;
+}
+.second_block a {
+    text-decoration: none;
+    color: black;
+}
+.second_block a :hover {
+    text-decoration: underline;
+}
+.text-link {
+    display: flex;
+    align-items: center;
+}
+.social-net {
+    display: flex;
+    align-items: center;
+}
+.fastlinks {
+    padding: 0;
+    list-style-type: none;
+    font-size: 24px;
+    margin: 0;
+}
+.fast_link {
+    color: black;
+    text-decoration: none;
+}
+.fast_link:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 1760px) {
+    .banner_container {
+        max-width: 1720px;
+    }
+}
+
+@media screen and (max-width: 1720px) {
+    .container {
+        width: 1196px;
+    }
+    .header {
+        height: 83px;
+    }
+    .nav {
+        height: 83px;
+    }
+    .logo img:nth-child(1){
+        width: 77px;
+    }
+    .logo-text p {
+        font-size: 14px;
+    }
+
+    .menu li a {
+        font-size: 17px;
+    }
+    .menu li {
+        padding: 0.8rem 2em 0.8em 2em;
+    }
+
+    .banner {
+        min-height: 570px;
+        background: url('../img/School-1366.jpg') no-repeat center top /cover;
+    }
+    .banner_container {
+        max-width: 1256px;
+    }
+    .cover {
+        margin-top: 271px;
+        margin-right: 700px;
+        width: 567px;
+        height: 256px;
+    }
+    .title{
+        font-size: 40px;
+    }
+
+    .goal {
+        height: 373px;
+    }
+    .goal-container {
+        max-width: 793px;
+    }
+    h2 {
+        font-size: 31px;
+    }
+    .info {
+        font-size: 20px;
+    }
+    .author {
+        font-size: 18px;
+    }
+
+    .pupils {
+        background: url("../img/pupils-bg-1366.jpg") no-repeat center top /cover;
+    }
+    .text_with_photo {
+        height: 457px;
+    }
+    .text_with_button {
+        margin-left: 55px;
+    }
+    .text_with_button p {
+        font-size: 17px;
+    }
+    .text_with_button button {
+        margin-top: 30px;
+        padding: 12px 32px;
+        font-size: 26px;
+    }
+
+    .events_and_news {
+        margin-top: 105px;
+    }
+    .events_and_news_container {
+        width: 994px;
+    }
+    h3 {
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+    .single_event{
+        margin-bottom: 22px;
+    }
+    .event_on_this_date {
+        margin-left: 22px;
+        font-size: 22px;
+    }
+    .additional {
+        font-size: 19px;
+    }
+    .date {
+        width: 100px;
+        height: 87px;
+        border-radius: 14px;
+    }
+    .number {
+        font-size: 52px;
+        margin-bottom: 0;
+    }
+    .month {
+        margin-top: -7px;
+        font-size: 15px;
+    }
+    .calendar {
+        padding: 11px 15px;
+        font-size: 22px;
+    }
+    hr {
+        width: 489px;
+    }
+    .news img:nth-child(1) {
+        width: 13px;
+    }
+    .news-title {
+        font-size: 22px;
+        margin-top: 22px;
+        margin-bottom: 7px;
+    }
+    .publication_date {
+        margin-bottom: 22px;
+    }
+    .publication_date span {
+        font-size: 13px;
+        margin-left: 7px;
+    }
+    .news button {
+        margin-top: 22px;
+        padding: 11px 45px;
+        font-size: 21px;
+    }
+
+    .up img:nth-child(1){
+        width: 33px;
+    }
+    .up {
+        margin-top: -33px;
+        margin-left: -33px;
+    }
+    .footer-panel {
+        margin-top: 105px;
+        height: 275px;
+    }
+    .first_block img:nth-child(1) {
+        width: 160px;
+    }
+    .footer-block p {
+        font-size: 18px;
+    }
+    .second_block img {
+        width: 22px;
+    }
+    .social-net img {
+        width: 18px
+    }
+    .fastlinks {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 1270px) {
+    .container {
+        width: 1100px;
+    }
+    .menu li {
+        padding: 0.8em 1.4em 0.8em 1.4em;
+    }
+    .banner_container {
+        max-width: 1140px;
+    }
+    .cover {
+        margin-top: 271px;
+        margin-right: 700px;
+        width: 518px;
+        height: 250px;
+    }
+    .title{
+        font-size: 36px;
+    }
+    .text_with_button button {
+        margin-top: 1em;
+        padding: 0.5em 1.4em;
+        font-size: 26px;
+    }
+}
+
+@media screen and (max-width: 1189px) {
+    .container {
+        width: 884px;
+    }
+    .logo-text p {
+        font-size: 13px;
+    }
+    .menu li a {
+        font-size: 15px;
+    }
+    .menu li {
+        padding: 0.8em 0.9em 0.8em 0.9em;
+    }
+
+    .banner {
+        min-height: 426px;
+        background: url('../img/School-1024.jpg') no-repeat center top /cover;
+    }
+    .banner_container {
+        max-width: 924px;
+    }
+    .cover {
+        margin-top: 209px;
+        width: 425px;
+        height: 192px;
+    }
+    .title{
+        font-size: 30px;
+    }
+
+    .goal {
+        height: 344px;
+    }
+    .goal-container {
+        max-width: 734px;
+    }
+    h2 {
+        font-size: 28px;
+    }
+    .info {
+        font-size: 18px;
+    }
+    .author {
+        font-size: 15px;
+    }
+
+    .pupils {
+        background: url("../img/pupils-bg-1024.jpg") no-repeat center top /cover;
+    }
+    .text_with_photo {
+        height: 440px;
+    }
+    .text_with_button {
+        margin-left: 50px;
+    }
+    .text_with_button p {
+        font-size: 15px;
+    }
+    .text_with_button button {
+        margin-top: 20px;
+        padding: 10px 32px;
+        font-size: 22px;
+    }
+
+    .events_and_news {
+        margin-top: 80px;
+    }
+    .events_and_news_container {
+        width: 790px;
+    }
+    h3 {
+        font-size: 26px;
+        margin-bottom: 20px;
+    }
+    .single_event{
+        margin-bottom: 20px;
+    }
+    .event_on_this_date {
+        margin-left: 16px;
+        font-size: 18px;
+    }
+    .additional {
+        font-size: 16px;
+    }
+    .date {
+        width: 93px;
+        height: 78px;
+        border-radius: 14px;
+    }
+    .number {
+        font-size: 50px;
+        margin-bottom: 0;
+    }
+    .month {
+        margin-top: -7px;
+        font-size: 13px;
+    }
+    .calendar {
+        padding: 9px 15px;
+        font-size: 20px;
+    }
+    hr {
+        width: 367px;
+    }
+    .news-title {
+        font-size: 18px;
+        margin-top: 20px;
+        margin-bottom: 7px;
+    }
+    .publication_date {
+        margin-bottom: 20px;
+    }
+    .publication_date span {
+        font-size: 13px;
+        margin-left: 7px;
+    }
+    .news button {
+        margin-top: 19px;
+        padding: 9px 50px;
+        font-size: 20px;
+    }
+
+    .up img:nth-child(1){
+        width: 33px;
+    }
+    .up {
+        margin-top: -33px;
+        margin-left: -33px;
+    }
+    .footer-panel {
+        margin-top: 85px;
+        height: 250px;
+    }
+    .first_block img:nth-child(1) {
+        width: 131px;
+    }
+    .footer-block p {
+        font-size: 15px;
+    }
+    .second_block img {
+        width: 20px;
+    }
+    .social-net img {
+        width: 15px
+    }
+    .fastlinks {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 970px) {
+    .text_with_button {
+        margin-left: 2.5em;
+    }
+    .text_with_photo {
+        height: 430px;
+    }
+    .text_with_button button {
+        font-size: 20px;
+    }
+    .up img:nth-child(1){
+        width: 30px;
+    }
+    .up {
+        margin-top: -30px;
+        margin-left: -30px;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .container {
+        width: 855px;
+    }
+    .logo-text {
+        margin-left: 0.2em;
+    }
+    .logo-text p {
+        font-size: 12px;
+    }
+    .menu li {
+        padding: 0.8em;
+    }
+    .banner_container {
+        max-width: 880px;
+    }
+    .text_with_button {
+        margin-left: 2em;
+    }
+}
+
+@media screen and (max-width: 915px) {
+    .container {
+        width: 675px;
+    }
+    .logo img:nth-child(1){
+        width: 65px;
+    }
+    .header, .nav {
+        height: 76px;
+    }
+    body._lock {
+        overflow: hidden;
+    }
+    .logo-text, .menu {
+        display: none;
+    }
+    .tablet-title {
+        display: block;
+        font-size: 22px;
+        font-family: 'Merriweather', serif;
+        text-align: center;
+    }
+    .menu-open {
+        display: block;
+        z-index: 5;
+        position: relative;
+        width: 30px;
+        height: 20px;
+        cursor: pointer;
+    }
+    .menu-open span,
+    .menu-open::before,
+    .menu-open::after {
+        left: 0;
+        position: absolute;
+        height: 10%;
+        width: 100%;
+        transition: all 0.3s ease 0s;
+        background-color: #FFFFFF;
+    }
+    .menu-open::before,
+    .menu-open::after {
+        content: "";
+    }
+    .menu-open::before {
+        top: 0;
+    }
+    .menu-open::after {
+        bottom: 0;
+    }
+    .menu-open span {
+        top: 50%;
+        transform: scale(1) translate(0, -50%);
+    }
+    .menu-open._active span {
+        transform: scale(0) translate(0, -50%);
+    }
+    .menu-open._active::before {
+        top: 50%;
+        transform: rotate(-45deg) translate(0px, -50%);
+    }
+    .menu-open._active::after {
+        bottom: 50%;
+        transform: rotate(45deg) translate(0px, 50%);
+    }
+
+    .menu__body {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: -115%;
+        width: 95%;
+        height: 100%;
+        background-color: rgba(1, 65, 111, 0.9);
+        padding: 100px 30px 20px 30px;
+        transition: left 0.3s ease 0s;
+        overflow: auto;
+    }
+    .menu__body._active {
+        left: 0;
+    }
+    .menu__body::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        width: 100%;
+        left: -100%;
+        height: 76px;
+        background-color: #9FD8ED;
+        z-index: 6;
+    }
+    .menu__body._active::before{
+        left: 0;
+    }
+    .menu__list {
+        padding: 0;
+    }
+    .menu__list > li {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 0 30px 0;
+        list-style-type: none;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .menu__list > li:last-child {
+        margin-bottom: 150px;
+    }
+    .menu__list > li._active .menu__sub-list {
+        display: block;
+    }
+    .menu__link {
+        font-size: 22px;
+        text-decoration: none;
+        color: #FFFFFF;
+    }
+    .menu__arrow {
+        width: 0;
+        height: 0;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-top: 10px solid #FFFFFF;
+        transition: transform 0.3s ease 0s;
+        margin-right: 30px;
+    }
+    .menu__sub-list {
+        padding-left: 20px;
+        margin-right: 30px;
+        margin-top: 20px;
+        position: relative;
+        flex: 1 1 100%;
+        left: auto;
+        list-style-type: none;
+        display: none;
+        transform: translate(0, 10%);
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        transition: all 0.3s ease 0s;
+    }
+    .menu__list > li._active .menu__sub-list {
+        opacity: 1;
+        visibility: visible;
+        transform: translate(0, 0);
+        pointer-events: all;
+    }
+    .menu__list > li._active .menu__arrow {
+        transform: rotate(-180deg);
+    }
+    ul li:hover > ul {
+        visibility: hidden;
+        opacity: 0;
+        display: none;
+    }
+    .menu__sub-link {
+        font-size: 22px;
+        color: #FFFFFF;
+    }
+    .menu__sub-list > li {
+        margin-top: 26px;
+    }
+    .menu__sub-list > li:first-child {
+        margin-top: 0;
+    }
+    .tablet-title,
+    .phone-title,
+    .nav a {
+        z-index: 5;
+    }
+
+    .banner {
+        background: url('../img/School-tablet.jpg') no-repeat center top /cover;
+    }
+    .cover {
+        display: none;
+    }
+
+    .goal {
+        height: 245px;
+    }
+    .goal-container {
+        width: 577px;
+    }
+    h2 {
+        font-size: 24px;
+        margin: 0;
+    }
+    .info {
+        margin-top: 8px;
+        font-size: 15px;
+    }
+    .author {
+        font-size: 14px;
+        margin-bottom: 0;
+    }
+
+    .pupils {
+        background: transparent;
+    }
+    .text_with_photo {
+        display: none;
+    }
+    .text_with_button {
+        margin-top: 50px;
+        margin-left: 0;
+    }
+    .text_with_button p {
+        text-align: center;
+    }
+    .text_with_button button {
+        margin-top: 30px;
+        font-size: 18px;
+    }
+
+    .events_and_news_container {
+        width: 675px;
+    }
+    h3 {
+        font-size: 23px;
+        margin-bottom: 20px;
+    }
+    .single_event{
+        margin-bottom: 17px;
+    }
+    .event_on_this_date {
+        margin-left: 14px;
+        font-size: 16px;
+    }
+    .additional {
+        font-size: 14px;
+    }
+    .date {
+        width: 81px;
+        height: 68px;
+        border-radius: 12px;
+    }
+    .number {
+        font-size: 44px;
+        margin-bottom: 0;
+    }
+    .month {
+        margin-top: -7px;
+        font-size: 11px;
+    }
+    .calendar {
+        padding: 8px 14px;
+        font-size: 18px;
+    }
+    hr {
+        width: 320px;
+    }
+    .news-title {
+        font-size: 16px;
+        margin-top: 14px;
+        margin-bottom: 7px;
+    }
+    .publication_date {
+        margin-bottom: 14px;
+    }
+    .publication_date span {
+        font-size: 13px;
+        margin-left: 7px;
+    }
+    .news button {
+        margin-top: 21px;
+        padding: 8px 38px;
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    .footer-panel {
+        height: 260px;
+    }
+    .first_block {
+        display: none;
+    }
+    .footer-block p {
+        line-height: 1.5;
+    }
+    .fastlinks {
+        line-height: 1.5;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .container {
+        width: 593px;
+    }
+    .nav {
+        height: 76px;
+    }
+
+    .banner {
+        background: url('../img/School-horiz.jpg') no-repeat center top /cover;
+        min-height: 299px;
+    }
+
+    .goal {
+        height: 225px;
+    }
+    .goal-container {
+        width: 553px;
+    }
+    .info {
+        margin-top: 8px;
+        font-size: 15px;
+    }
+    .author {
+        font-size: 14px;
+    }
+
+    .text_with_button button {
+        margin-top: 40px;
+        font-size: 16px;
+    }
+
+    .events_and_news_container {
+        width: 553px;
+    }
+    h3 {
+        font-size: 20px;
+        margin-bottom: 14px;
+    }
+    .single_event{
+        margin-bottom: 12px;
+    }
+    .event_on_this_date {
+        margin-left: 9px;
+        font-size: 13px;
+    }
+    .additional {
+        font-size: 12px;
+    }
+    .date {
+        width: 56px;
+        height: 48px;
+        border-radius: 8px;
+    }
+    .number {
+        font-size: 28px;
+    }
+    .month {
+        margin-top: -5px;
+        font-size: 9px;
+    }
+    .calendar {
+        padding: 8px 9px;
+        font-size: 14px;
+    }
+    hr {
+        width: 265px;
+    }
+    .news-title {
+        font-size: 13px;
+        margin-top: 10px;
+        margin-bottom: 3px;
+    }
+    .news img:nth-child(1) {
+        width: 9px;
+    }
+    .publication_date {
+        margin-bottom: 9px;
+    }
+    .publication_date span {
+        font-size: 9px;
+        margin-left: 3px;
+    }
+    .news button {
+        margin-top: 13px;
+        padding: 8px 17px;
+        font-size: 15px;
+        font-weight: 600;
+    }
+
+    .footer-panel {
+        height: 280px;
+    }
+    .first_block {
+        display: none;
+    }
+    .footer-block p {
+        line-height: 1.7;
+        font-size: 15px;
+    }
+    .fastlinks {
+        line-height: 1.7;
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    h1 {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        width: 100%;
+    }
+    .logo img:nth-child(1){
+        margin-left: 20px;
+        width: 60px;
+    }
+    .nav {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .tablet-title {
+        display: none;
+    }
+    .phone-title {
+        display: block;
+        font-size: 18px;
+        font-family: 'Merriweather', serif;
+        text-align: center;
+    }
+    .menu-open {
+        margin-right: 20px;
+    }
+
+    .banner {
+        background: url('../img/School-mob.jpg') no-repeat center top /cover;
+        min-height: 256px;
+    }
+
+    .goal {
+        width: 100%;
+        height: 274px;
+    }
+    .goal-container {
+        width: 100%;
+    }
+    .goal-text {
+        width: 85%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .author {
+        font-size: 14px;
+    }
+    .info {
+        margin-top: 12px;
+        font-size: 14px;
+    }
+    h2 {
+        font-size: 23px;
+    }
+
+    .text_with_button p {
+        width: 85%;
+        margin: 0 auto;
+        font-size: 14px;
+    }
+
+    .events_and_news_container {
+        width: 100%;
+    }
+    .events_and_news_container {
+        flex-wrap: wrap;
+    }
+    h3 {
+        font-size: 24px;
+    }
+    .single_event{
+        margin-bottom: 16px;
+    }
+    .event_on_this_date {
+        margin-left: 14px;
+        font-size: 15px;
+    }
+    .additional {
+        font-size: 14px;
+    }
+    .date {
+        width: 71px;
+        height: 61px;
+        border-radius: 10px;
+    }
+    .number {
+        font-size: 37px;
+    }
+    .month {
+        margin-top: -5px;
+        font-size: 11px;
+    }
+    .calendar {
+        padding: 12px 17px;
+        font-size: 16px;
+    }
+    hr {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .news-title {
+        font-size: 15px;
+        margin-top: 12px;
+        margin-bottom: 5px;
+    }
+    .news img:nth-child(1) {
+        width: 11px;
+    }
+    .publication_date {
+        margin-bottom: 12px;
+    }
+    .publication_date span {
+        font-size: 11px;
+        margin-left: 5px;
+    }
+    .news button {
+        margin-top: 25px;
+        padding: 12px 18px;
+        font-size: 16px;
+        font-weight: 600;
+    }
+    .events, .news {
+        margin: 0 auto;
+    }
+    .news {
+        margin-top: 50px;
+    }
+    .footer-panel {
+        margin-top: 50px;
+        height: 270px;
+    }
+    .footer-block {
+        flex-wrap: wrap;
+        width: 90%;
+        margin: 0 auto;
+        justify-content: space-around;
+    }
+    .link-block {
+        display: none;
+    }
+    .footer-block p {
+        font-size: 15px;
+    }
+    .second_block img {
+        width: 20px;
+    }
+    .social-net img {
+        width: 15px
+    }
+    .fastlinks {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .footer-block {
+        width: 70%;
+        justify-content: center;
+    }
+    .footer-panel {
+        margin-top: 50px;
+        height: 500px;
+        text-align: center;
+    }
+    .social-net {
+        margin: 0 auto;
+    }
+    .second_block {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .phone-title {
+        font-size: 15px;
+    }
+    .logo img:nth-child(1){
+        margin-left: 15px;
+    }
+    .menu-open {
+        margin-right: 15px;
+    }
+
+    .goal {
+        height: 300px;
+    }
+
+    .events_and_news_container {
+        width: 553px;
+    }
+    h3 {
+        font-size: 20px;
+        margin-bottom: 14px;
+    }
+    .single_event{
+        margin-bottom: 12px;
+    }
+    .event_on_this_date {
+        margin-left: 9px;
+        font-size: 14px;
+    }
+    .additional {
+        font-size: 12px;
+    }
+    .date {
+        width: 56px;
+        height: 48px;
+        border-radius: 8px;
+    }
+    .number {
+        font-size: 28px;
+    }
+    .month {
+        margin-top: -5px;
+        font-size: 9px;
+    }
+    .calendar {
+        margin-top: 10px;
+        padding: 8px 12px;
+        font-size: 15px;
+    }
+    hr {
+        width: 265px;
+    }
+    .news-title {
+        font-size: 14px;
+        margin-top: 10px;
+        margin-bottom: 3px;
+    }
+    .news img:nth-child(1) {
+        width: 10px;
+    }
+    .publication_date {
+        margin-bottom: 9px;
+    }
+    .publication_date span {
+        font-size: 10px;
+        margin-left: 3px;
+    }
+    .news button {
+        margin-top: 15px;
+        padding: 8px 17px;
+        font-size: 15px;
+    }
+    .events_and_news_container {
+        width: 100%;
+    }
+    .events_and_news_container {
+        flex-wrap: wrap;
+    }
+    .events, .news {
+        margin: 0 auto;
+    }
+    .news {
+        margin-top: 50px;
+    }
+}
