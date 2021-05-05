@@ -17,7 +17,7 @@
             </div>
             <div>
                 <ul class="menu">
-                    <li><a href="/">Про школу</a>
+                    <li><a href="{{ route('index') }}">Про школу</a>
                         <ul>
                             <li><a href="#">Інформація про діяльність навчального закладу</a></li>
                             <li><a href="#">Адміністрація</a></li>
@@ -29,14 +29,14 @@
                             <li><a href="#">Медична служба</a></li>
                         </ul>
                     </li>
-                    <li><a href="/news">Новини</a>
+                    <li><a href="{{ route('news') }}">Новини</a>
                         <ul>
                             <li><a href="#">Фотогалерея</a></li>
                         </ul>
                     </li>
-                    <li><a href="/schedule">Учням</a>
+                    <li><a href="{{ route('pupil') }}">Учням</a>
                         <ul>
-                            <li><a href="/schedule">Розклад</a></li>
+                            <li><a href="{{ route('schedule') }}">Розклад</a></li>
                             <li><a href="#">ЗНО-2021</a></li>
                             <li><a href="#">Блоги</a></li>
                             <li><a href="#">Healthy Schools</a></li>
@@ -46,12 +46,13 @@
                     </li>
                     <li><a href="#">Вчителям</a>
                         <ul>
+                            <li><a href="{{ route('extracurriculars') }}">Факультативи</a></li>
                             <li><a href="#">Педрада</a></li>
                             <li><a href="#">Підвищення кваліфікації</a></li>
                         </ul>
                     </li>
                     <li><a href="#">Календар</a></li>
-                    <li class="last"><a href="/contacts">Контакти</a>
+                    <li class="last"><a href="{{ route('contacts') }}">Контакти</a>
                         <ul>
                             <li><a href="#">Вакансії</a></li>
                         </ul>
@@ -63,7 +64,7 @@
                 <nav class="menu__body">
                     <ul class="menu__list">
                         <li>
-                            <a href="/" class="menu__link">Про школу</a>
+                            <a href="{{ route('index') }}" class="menu__link">Про школу</a>
                             <span class="menu__arrow"></span>
                             <ul class="menu__sub-list">
                                 <li><a href="" class="menu__sub-link">Інформація про діяльність навчального закладу</a></li>
@@ -77,15 +78,15 @@
                             </ul>
                         </li>
                         <li>
-                            <a href="/news" class="menu__link">Новини</a>
+                            <a href="{{ route('news') }}" class="menu__link">Новини</a>
                             <span class="menu__arrow"></span>
                             <ul class="menu__sub-list"><li><a href="" class="menu__sub-link">Фотогалерея</a></li></ul>
                         </li>
                         <li>
-                            <a href="/schedule" class="menu__link">Учням</a>
+                            <a href="{{ route('pupil') }}" class="menu__link">Учням</a>
                             <span class="menu__arrow"></span>
                             <ul class="menu__sub-list">
-                                <li><a href="/schedule" class="menu__sub-link">Розклад</a></li>
+                                <li><a href="{{ route('schedule') }}" class="menu__sub-link">Розклад</a></li>
                                 <li><a href="#" class="menu__sub-link">ЗНО-2021</a></li>
                                 <li><a href="#" class="menu__sub-link">Блоги</a></li>
                                 <li><a href="#" class="menu__sub-link">Healthy Schools</a></li>
@@ -103,7 +104,7 @@
                         </li>
                         <li><a href="" class="menu__link">Календар</a></li>
                         <li>
-                            <a href="/contacts" class="menu__link">Контакти</a>
+                            <a href="{{ route('contacts') }}" class="menu__link">Контакти</a>
                             <span class="menu__arrow"></span>
                             <ul class="menu__sub-list"><li><a href="" class="menu__sub-link">Вакансії</a></li></ul>
                         </li>

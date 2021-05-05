@@ -1,0 +1,86 @@
+.inner_container {
+    display: flex;
+    justify-content: space-between;
+    margin: 4em 5em;
+}
+
+.extracurricular {
+    border: solid 2px #01416F;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    height: 100%;
+}
+
+a {
+    color: #01416F;
+    text-decoration: none;
+}
+
+h1 {
+    margin-top: 0;
+}
+
+h3 {
+    margin-top: -0.7em;
+}
+
+.class_list h3 {
+    margin-top: 1em;
+    margin-bottom: 0;
+}
+
+.class_list p {
+    margin: 0;
+}
+
+.curricular_block {
+    margin: 4em 5em;
+}
+
+.curricular_block a {
+    color: black;
+}
+
+.curricular_info {
+    border: solid 2px #01416F;
+    padding: 1.2em;
+    margin-bottom: 1em;
+}
+
+.curricular_info p {
+    margin: 0;
+}
+
+.curricular_info h2 {
+    margin-top: 0;
+    margin-bottom: 0.3em;
+}
+
+.curricular_info span {
+    color: #01416F;
+}
+
+.class_list button {
+    margin-top: 1.5em;
+    padding: 0.7em 1em;
+    font-size: 1.1em;
+}
+
+@media screen and (max-width: 991px) {
+    .inner_container {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .curricular_block {
+        margin: 4em 1em;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .inner_container {
+        margin-top: 3em !important;
+        margin-bottom: 3em !important;
+        flex-wrap: wrap;
+    }
+}

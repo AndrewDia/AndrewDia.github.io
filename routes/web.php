@@ -13,9 +13,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', 'PagesController@index');
-Route::get('/news{newsNum?}', 'PagesController@news');
-Route::get('/schedule', 'PagesController@schedule');
-Route::get('/contacts', 'PagesController@contacts');
+Route::get('/', 'PagesController@index')->name('index');
+Route::get('/news{newsNum?}', 'PagesController@news')->name('news');
+Route::get('/schedule', 'PagesController@schedule')->name('schedule');
+Route::get('/contacts', 'PagesController@contacts')->name('contacts');
+Route::get('/pupil{id?}', 'PagesController@pupil')->name('pupil');
+Route::get('/extracurriculars', 'PagesController@extracurriculars')->name('extracurriculars');
+Route::get('/extracurricular{id?}', 'PagesController@extracurricular')->name('extracurricular');
+Route::get('/{class?}', 'PagesController@class')->name('class');
+
 
 Route::post('/contacts', 'ContactController@submit');
